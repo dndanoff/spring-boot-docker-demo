@@ -28,7 +28,7 @@ public class SimpleRestController {
 
 	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	@ResponseStatus(HttpStatus.OK)
-	public List<Greeting> publishFeasibilityCheckMessage() {
+	public List<Greeting> getAllGreetings() {
 		LOGGER.info("Handling request to display all greetings.");
 		List<Greeting> greetings = Lists.newArrayList(new Greeting("Hello World!"), new Greeting("Privet!"));
 		LOGGER.debug("Returning the following greeting={}",greetings);
